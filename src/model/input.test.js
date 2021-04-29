@@ -23,6 +23,7 @@ describe('Input', () => {
       './.hidden-sub',
       'hyphen-folder',
       'under_score',
+      'tilde~',
     ])('returns true for %s', folderName => {
       expect(Input.isValidFolderName(folderName)).toStrictEqual(true);
     });
