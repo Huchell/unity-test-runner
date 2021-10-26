@@ -14,6 +14,7 @@ async function action() {
     useHostNetwork,
     customParameters,
     sshAgent,
+    gitPersonalToken,
     githubToken,
     checkName,
   } = Input.getFromUser();
@@ -33,6 +34,7 @@ async function action() {
       useHostNetwork,
       customParameters,
       sshAgent,
+      gitPersonalToken,
       githubToken,
     });
   } finally {
