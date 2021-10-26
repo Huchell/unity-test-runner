@@ -23,7 +23,6 @@ class Input {
     const rawUseHostNetwork = getInput('useHostNetwork') || 'false';
     const customParameters = getInput('customParameters') || '';
     const sshAgent = getInput('sshAgent') || '';
-    const gitUser = getInput('gitUser') || '';
     const gitPrivateToken = getInput('gitPrivateToken') || '';
     const githubToken = getInput('githubToken') || '';
     const checkName = getInput('checkName') || 'Test Results';
@@ -63,7 +62,6 @@ class Input {
       customParameters,
       sshAgent,
       gitPrivateToken,
-      gitUser,
       githubToken,
       checkName,
     };
