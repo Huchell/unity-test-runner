@@ -27,6 +27,8 @@ class Input {
     const githubToken = getInput('githubToken') || '';
     const checkName = getInput('checkName') || 'Test Results';
 
+    console.log(gitPrivateToken === undefined);
+
     // Validate input
     if (!includes(this.testModes, testMode)) {
       throw new Error(`Invalid testMode ${testMode}`);
