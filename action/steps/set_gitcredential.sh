@@ -6,9 +6,9 @@ then
 else
   echo "GIT_PRIVATE_TOKEN is set configuring git credentials"
 
-	git config --global credential.helper store
-  git config --global user.name "GitCI"
-  git config --global user.password $GIT_PRIVATE_TOKEN
+	git config --global credential.helper '!f() { sleep 1; echo "username=${GIT_USER}"; echo "password=${GIT_PRIVATE_TOKEN}"; }; f'
+  # git config --global user.name "GitCI"
+  # git config --global user.password $GIT_PRIVATE_TOKEN
 
 	# git config --global --replace-all url.https://github.com/.insteadOf ssh://git@github.com/
 	# git config --global --add url.https://github.com/.insteadOf git@github.com
