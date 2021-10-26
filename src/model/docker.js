@@ -30,6 +30,7 @@ class Docker {
       gitPrivateToken,
       githubToken,
     } = parameters;
+    console.log(gitPrivateToken === undefined);
 
     const command = `docker run \
         --workdir /github/workspace \

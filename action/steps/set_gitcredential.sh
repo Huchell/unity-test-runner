@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -z "$GIT_PRIVATE_TOKEN" ]
+if [ -z $GIT_PRIVATE_TOKEN ]
 then
   echo "GIT_PRIVATE_TOKEN unset skipping"
 else
