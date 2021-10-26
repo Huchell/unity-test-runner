@@ -27,6 +27,7 @@ class Docker {
       useHostNetwork,
       customParameters,
       sshAgent,
+      gitUser,
       gitPrivateToken,
       githubToken,
     } = parameters;
@@ -59,6 +60,7 @@ class Docker {
         --env RUNNER_TOOL_CACHE \
         --env RUNNER_TEMP \
         --env RUNNER_WORKSPACE \
+        --env GIT_USER="${gitUser}" \
         --env GIT_PRIVATE_TOKEN="${gitPrivateToken}" \
         ${sshAgent ? '--env SSH_AUTH_SOCK=/ssh-agent' : ''} \
         --volume "/var/run/docker.sock":"/var/run/docker.sock" \

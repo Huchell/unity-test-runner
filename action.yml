@@ -32,6 +32,10 @@ inputs:
     required: false
     default: ''
     description: 'SSH Agent path to forward to the container'
+  gitUser:
+    required: false
+    default: ''
+    description: 'Git user to pull private packages from github.'
   gitPrivateToken:
     required: false
     default: ''
